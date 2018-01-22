@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "MPG Modeling/Prediction presentation\n========================================================\nauthor: Hugo Barros\ndate: 1/18/2018\nautosize: true\n\nIntroduction and Scope\n========================================================\n\n  With the dataset mtcars, we intend this shiny application to model and predict the mileage per gallon of a car given one or more factors as described below:\n\n- Model MPG ~ hp\n- Model MPG ~ hp+cyl+drat+carb\n- Predict MPG given input from the user \n\nSummary of dataset (mtcars) being used\n========================================================\n\n```{r}\nsummary(mtcars)\n```\n\nModels Plot\n========================================================\n\n```{r, echo=FALSE,eval=TRUE}\n\n set.seed(789)\n model1 <- lm(mpg ~ hp, data = mtcars)\n model2 <- lm(mpg ~ hp + cyl + drat + carb, data = mtcars)\n \n plot(mtcars$hp, mtcars$mpg, xlab = \"Horsepower\", \n                     ylab = \"Miles Per Gallon\", bty = \"n\", pch = 16,\n                     xlim = c(50, 350), ylim = c(10, 35))\n \n abline(model1, col = \"red\", lwd = 2)\n abline(model2, col = \"blue\", lwd = 2)\n\n #fig <- png(\"C:/Users/hugo.m.barros/Videos/Data Science/Data Products/week4/plot_image\")\n #fig\n\n```\n\nModel 1 - Red\n\nModel 2 - Blue\n\n\nApplication\n========================================================\n\n  Please try out here: https://hugodafh.shinyapps.io/dataproducts_week4_project/\n\n",
+    "created" : 1516272259317.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1957737568",
+    "id" : "DECB43F8",
+    "lastKnownWriteTime" : 1516637164,
+    "last_content_update" : -2147483648,
+    "path" : "C:/Users/hugo.m.barros/Videos/Data Science/Data Products/week4/presentation_week4.Rpres",
+    "project_path" : "presentation_week4.Rpres",
+    "properties" : {
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_presentation"
+}

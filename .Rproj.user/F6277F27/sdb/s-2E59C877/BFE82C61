@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#\n# This is the user-interface definition of a Shiny web application. You can\n# run the application by clicking 'Run App' above.\n#\n# Find out more about building applications with Shiny here:\n# \n#    http://shiny.rstudio.com/\n#\n\n\n\nlibrary(shiny)\nshinyUI(fluidPage(\n        titlePanel(\"Predict MPG from Horsepower & from HorsePower/Cyl/drat/carb\"),\n        sidebarLayout(\n                sidebarPanel(\n                        sliderInput(\"sliderHp\", \"What is the Horsepower of the car?\", 50, 350, value = 200),\n                        sliderInput(\"sliderCyl\", \"Number of cylinders of the car?\", 4, 8, value = 4),\n                        sliderInput(\"sliderDrat\", \"What is the DRAT of the car?\", 2.76, 4.93, value = 2.76),\n                        sliderInput(\"sliderCarb\", \"Number of carburetors of the car?\", 1, 8, value = 1),\n                        checkboxInput(\"showModel1\", \"Show/Hide Model 1\", value = TRUE),\n                        checkboxInput(\"showModel2\", \"Show/Hide Model 2\", value = TRUE),\n                        submitButton(\"Submit\")\n                ),\n                mainPanel(\n                        plotOutput(\"plot1\"),\n                        h3(\"Predicted MPG from Model 1:\"),\n                        textOutput(\"pred1\"),\n                        h3(\"Predicted MPG from Model 2:\"),\n                        textOutput(\"pred2\"),\n                        h3(\"\"),\n                        h4(\"Data: mtcars\"),\n                        \n                        h5(\"The graph shows 2 models: The red slope is a model of the MPG given the HorsePower. The Blue slope is a model of the MPG given\n                           all of the predictors on the left panel\"),\n                        \n                        h5(\"The colored points are the predicted MPGs for a set of given values. The red point is MPG for the selected hp, and the blue point\n                           is MPG for the selected hp, cyl, drat,carb\")\n                )\n        )\n))",
+    "created" : 1516026904801.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3679858271",
+    "id" : "BFE82C61",
+    "lastKnownWriteTime" : 1516112749,
+    "last_content_update" : -2147483648,
+    "path" : "C:/Users/hugo.m.barros/Videos/Data Science/Data Products/week4/ui.R",
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

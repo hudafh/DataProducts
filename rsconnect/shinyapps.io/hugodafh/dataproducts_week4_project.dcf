@@ -1,0 +1,13 @@
+name: dataproducts_week4_project
+title: dataProducts_week4_project
+username:
+account: hugodafh
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 259267
+bundleId: 1187163
+url: https://hugodafh.shinyapps.io/dataproducts_week4_project/
+when: 1516635219.82101
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: presentation_week4-figure/shinyApp_screenshot.PNG|presentation_week4-figure/unnamed-chunk-2-1.png

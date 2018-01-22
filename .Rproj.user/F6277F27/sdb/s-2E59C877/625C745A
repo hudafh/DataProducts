@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "\\name{MPG prediction}\n\\alias{MPG prediction}\n%- Also NEED an '\\alias' for EACH other topic documented here.\n\\title{\n%%  ~~function to do ... ~~\n        MPG prediction documentation\n}\n\\description{\n%%  ~~ A concise (1-5 lines) description of what the function does. ~~\n              In this shiny app 2 models are compared and predictions are made based on input from the user.\n      \n              Model 1 models MPG given the horsepower. It is the red line on the plot.\n              \n              Model 2 models MPG given the horsepower, cylinders, drat, and carburetors. It is the blue line on the plot.\n        \n              Prediction Input is done through the sliders on the left pane and clicking \"Submit\"\n}\n\\usage{\n        \n       \n        Use sliders for prediction input and click the submit button\n}\n%- maybe also 'usage' for other objects documented here.\n\n\\details{\n%%  ~~ If necessary, more details than the description above ~~\n\n\n        There are 2 models using data from the mtcars dataset \n\n        Model 1: MPG ~ hp . Only takes input from horsepower slider\n        \n        Model 2: MPG ~ hp + cyl+drat+carb . Takes input from all of the sliders\n}\n\n\n\\author{\n%%  Hugo Barros\n}\n\n\n",
+    "created" : 1516116825424.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2818922280",
+    "id" : "625C745A",
+    "lastKnownWriteTime" : 1516633159,
+    "last_content_update" : -2147483648,
+    "path" : "C:/Users/hugo.m.barros/Videos/Data Science/Data Products/week4/documentation.Rd",
+    "project_path" : "documentation.Rd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_doc"
+}
